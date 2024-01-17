@@ -41,7 +41,7 @@ void	xpm_to_image_c(t_vars *v, int *w, int *h)
 		perror("Error!\nTextures have failed to convert!\n");
 		free_all(v);
 	}
-	v->txt->c[7] = '\0';
+	v->txt->c[7] = NULL;
 	v->txt->c[0] = mlx_xpm_file_to_image(v->mlx, "textures/c1.xpm", w, h);
 	v->txt->c[1] = mlx_xpm_file_to_image(v->mlx, "textures/c2.xpm", w, h);
 	v->txt->c[2] = mlx_xpm_file_to_image(v->mlx, "textures/c3.xpm", w, h);

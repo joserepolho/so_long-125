@@ -6,7 +6,7 @@
 /*   By: joaoribe <joaoribe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/28 19:31:05 by joaoribe          #+#    #+#             */
-/*   Updated: 2024/01/17 02:13:41 by joaoribe         ###   ########.fr       */
+/*   Updated: 2024/01/17 19:32:56 by joaoribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ char	**build_map(int fd, int width)
 			map[i] = ln;
 		else
 			free(ln);
-	ln = get_next_line(fd);
-	i++;
+		ln = get_next_line(fd);
+		i++;
 	}
 	if (ln)
 		free(ln);

@@ -1,4 +1,4 @@
-CC = cc -no-pie
+CC = cc
 OBJA = build_map.o check_path_utils.o checks.o free_errors.o free_all.o get_textures.o gnl_utils.o key_hook.o libft_functions.o player_start.o center_of_mass.o
 OBJA_PATH = $(patsubst %,$(SRC)%,$(OBJA))
 OBJM = render_frame.o  so_long.o
